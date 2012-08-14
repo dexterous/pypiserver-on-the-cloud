@@ -6,11 +6,11 @@ import pypiserver
 
 
 CWD = os.getcwd()
-PACKAGES = path.expanduser('~/packages')
+PACKAGES = path.expanduser('~/data')
 HTPASSWD = path.join(CWD, 'htpasswd')
 
 try:
-    os.mkdir(PACKAGES)
+    os.makedirs(PACKAGES, exist_ok=True)
 except OSError as e:
     if e.errno != errno.EEXIST:
         raise
