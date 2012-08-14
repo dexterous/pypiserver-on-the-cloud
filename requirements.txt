@@ -1,0 +1,2 @@
+passlib==1.6.1
+pypiserver==0.6.1
