@@ -10,7 +10,7 @@ PACKAGES = path.expanduser('~/data')
 HTPASSWD = path.join(CWD, 'htpasswd')
 
 try:
-    os.makedirs(PACKAGES, exist_ok=True)
+    os.makedirs(PACKAGES)
 except OSError as e:
     if e.errno != errno.EEXIST:
         raise
