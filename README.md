@@ -16,4 +16,4 @@ heroku
 ------
 Runs the WSGI application in `wsgi.py` using the bottle runner embedded in `pypiserver` in the `web` process.
 
-Uploaded packages are stored in `~/data`. Since heroku does not persist any of the directories on a dyno, you will lose packages between deployments. Need to figure out a better solution for this.
+Uploaded packages are stored in `~/data`. Since heroku does not persist any of the directories on a dyno, you will lose packages between `heroku push`s. Need to figure out a better solution for this.
